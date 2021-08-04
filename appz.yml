@@ -16,7 +16,7 @@ build:
       SONAR_PROJECT_NAME: AppZNodeProject
       SONAR_PROJECT_KEY: AppZNodeProjectKey
       NODE_MODULES: typescript
-      NPM_RUN_SCRIPT: "prod:build"
+      NPM_RUN_SCRIPT: "build"
 
 
 deploy:
