@@ -13,7 +13,7 @@ build:
     args:
        SONARQUBE: enabled
        SONAR_LOGIN_TOKEN: $${build.token.sonar} 
-       SONAR_HOST_URL: http://bibin-ecloudcontrol-dev-sonarqube-8-2.c0a83dc1.lowtouch.cloud
+       SONAR_HOST_URL: http://bibin-ecloudcontrol-dev-sonarqube-8-2.32d430c5.lowtouch.cloud
        SONAR_PROJECT_NAME: AppZNodeProject
        SONAR_PROJECT_KEY: AppZNodeProjectKey
        SCAN_LANG: node
