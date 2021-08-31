@@ -22,7 +22,7 @@ build:
 
 
 deploy:
-    context: bibin-ecloudcontrol/DEV
+    context: bibin-ecloudcontrol/DEV1
     replicas: 1
     port:
     - 8080
