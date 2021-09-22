@@ -32,5 +32,5 @@ app.get('/ipaddress', (req, res) => {
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'build', 'index.html'))
 })
-
+console.log(process.env.test);
 app.listen(8080)
