@@ -9,7 +9,8 @@ build:
     build_file: none
     output_files: output/*.zip
     image_template: node-14.16
- 
+    NODE_MODULES: typescript
+    NPM_RUN_SCRIPT: "build"
 
 
 
