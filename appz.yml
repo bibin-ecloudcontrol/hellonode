@@ -10,13 +10,7 @@ build:
     output_files: output/*.zip
     image_template: node-14.16
     args:
-       SONARQUBE: enabled
-       SONAR_LOGIN_TOKEN: $${build.token.sonar} 
-       SONAR_HOST_URL: https://bibin-ecloudcontrol-dev-sonarqube-8-2.038c839d.lowtouch.cloud
-       SONAR_PROJECT_NAME: AppZNodeProject
-       SONAR_PROJECT_KEY: AppZNodeProjectKey
-       SCAN_LANG: node
-       NODE_MODULES: typescript
+
        NPM_RUN_SCRIPT: "build"
 
 
