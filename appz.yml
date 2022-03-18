@@ -21,7 +21,7 @@ deploy:
     port:
     - 8080
     - 80
-
+    ingress: none
 
 properties:
     page_title: "React-bootstrap + nodejs-express App"
