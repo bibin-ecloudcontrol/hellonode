@@ -10,7 +10,13 @@ build:
     output_files: output/*.zip
     image_template: node-14.16
     args:
-
+       SONARQUBE: enabled
+       SONAR_LOGIN_TOKEN: $${build.token.sonar} 
+       SONAR_HOST_URL:  http://192.168.61.193:31561
+       SONAR_PROJECT_NAME: AppZNodeProject
+       SONAR_PROJECT_KEY: AppZNodeProjectKey
+       SCAN_LANG: node
+       NODE_MODULES: typescript
        NPM_RUN_SCRIPT: "build"
 
 
@@ -26,6 +32,6 @@ deploy:
 properties:
     page_title: "React-bootstrap + nodejs-express App"
     ##site_url: "https://hellonodejs.appzclient.com/"
-    BUILD_ON_STARTUP: 0
+    #BUILD_ON_STARTUP: 0
     revision: 80
     page_color: Blue
